@@ -133,7 +133,7 @@ void testSumOddsUint8() {
     uint8_t arg2 = arg2s[i];
     uint16_t algorithm = sumOdds(arg1, arg2);
     uint16_t assembly = sumOddsUint8(arg1, arg2);
-    uint8_t expected = results[i];
+    uint16_t expected = results[i];
     pprintf("sumOdds(%u,%u) is %u (algorithm) and %u (assembly); Should be %u", arg1, arg2, algorithm, assembly, expected);
     // Compare the results of the algorithm and real answer
     if(algorithm != expected) {
